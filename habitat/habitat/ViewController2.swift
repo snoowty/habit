@@ -10,20 +10,14 @@ import UIKit
 
 class ViewController2: UIViewController {
 
-    @IBOutlet weak var label1: UILabel!
-    var text1: String?
+
     
-    @IBOutlet weak var label2: UILabel!
-    var text2: String?
-    
-    @IBOutlet weak var label3: UILabel!
-    var text3: String?
+    @IBOutlet weak var Label: UILabel!
+    var text1 = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        label1.text = text1
-        label2.text = text2
-        label3.text = text3
+        Label.text = text1
         // Do any additional setup after loading the view.
     }
 

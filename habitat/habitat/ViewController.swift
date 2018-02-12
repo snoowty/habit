@@ -9,7 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -19,16 +22,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    @IBOutlet weak var habit1: UITextField!
-    @IBOutlet weak var habit2: UITextField!
-    @IBOutlet weak var habit3: UITextField!
-    
-    override func prepare(for segue: UIStoryboardSegue, sender:Any?) {
-        let viewController2 = segue.destination as! ViewController2
-        viewController2.text1 = habit1.text
-        viewController2.text2 = habit2.text
-        viewController2.text3 = habit3.text
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let secondViewController = segue.destination as! ViewController2
+        secondViewController.text1 = textField.text
     }
     
 }
