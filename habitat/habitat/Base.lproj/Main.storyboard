@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Axw-zS-xcp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -45,7 +45,7 @@
                                 <state key="normal" title="決定"/>
                                 <connections>
                                     <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0qU-EJ-l8b"/>
-                                    <segue destination="710-Rv-Aam" kind="show" id="TKr-jI-DRg"/>
+                                    <segue destination="710-Rv-Aam" kind="show" id="U06-Sg-sYP"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mkb-we-imC">
@@ -59,7 +59,6 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="YzK-60-bla"/>
                     <connections>
                         <outlet property="habit1" destination="QEx-7v-c6H" id="s3N-0c-v6r"/>
                         <outlet property="habit2" destination="Mkb-we-imC" id="WB3-L0-ejc"/>
@@ -121,24 +120,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMj-Uf-OBT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1878" y="133"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="HiL-4Q-JXy">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Axw-zS-xcp" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OKD-UG-5LP">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Fnw-gi-cs7"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ryK-Fg-ph6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="475.19999999999999" y="133.13343328335833"/>
         </scene>
     </scenes>
 </document>
